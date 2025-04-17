@@ -71,9 +71,11 @@ const LandingPage = () => {
                         Whether it’s creating powerful brand identities or capturing unforgettable moments, we bring vision to life with passion and precision.
                     </motion.p>
                 </div>
-                {/* <div className={styles.subdiv}>
-                    <h1>What we Do</h1>
-                    <motion.div>
+                <div className={styles.subdiv}>
+                    <h1 className={styles.subdivHeading}>WHAT WE DO</h1>
+                    <motion.div
+                        className={styles.subdiv1}
+                    >
                         <h1>Brands By GCI</h1>
                         <h3>Crafting compelling brand stories through design, advertising, and creative strategies.</h3>
                         <ul>
@@ -93,7 +95,7 @@ const LandingPage = () => {
                         </ul>
                         <button>Explore Events Portfolio</button>
                     </motion.div>
-                </div> */}
+                </div>
             </div>
         </div>
     );

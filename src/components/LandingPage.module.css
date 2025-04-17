@@ -93,7 +93,7 @@
 
 .header2 {
     width: 97%;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,3 +116,101 @@
     padding-left: 3rem;
 }
 
+.subdiv{
+    background-image: url(../assets/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 2rem;
+}
+
+.subdivHeading {
+    color: white;
+    font-size: 4Rem;
+}
+
+.subdiv1{
+    background-color: white;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 10px 5 px 5px rgba(0, 0, 0, 0.799);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+@media (max-width: 800px) {
+    .landingPage {
+        width: 100%;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .swiper {
+        height: 70vh;
+    }
+
+    .swiper-slide {
+        flex-direction: column;
+    }
+
+    .swiper-slide img {
+        height: 70vh;
+        object-fit: cover;
+    }
+
+    :global(.swiper) {
+        height: 70vh;
+    }
+
+    .slideText {
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .slideText h2 {
+        font-size: 2.5rem;
+    }
+
+    .slideText h3 {
+        font-size: 1.5rem;
+    }
+
+    .header {
+        height: 20vh;
+        margin-top: 0;
+    }
+
+    .header p {
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+        margin: 30px;
+    }
+
+    .header2 {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    .header2 h1 {
+        font-size: 2rem;
+        max-width: 100%;
+        text-align: start;
+    }
+
+    .header2 p {
+        font-size: 0.9rem;
+        max-width: 95%;
+        padding-left: 0;
+        text-align: left;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}

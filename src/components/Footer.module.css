@@ -45,3 +45,17 @@ h2{
 .contactUs p{
     font-size: 18px;
 }
+
+@media(max-width: 800px){
+    .footer{
+        gap: 20px;
+    }
+
+    .links a{
+        text-align: start;
+    }
+
+    .contactUs p{
+        text-align: start;
+    }
+}
