@@ -7,6 +7,8 @@ import styles from './LandingPage.module.css';
 import Slide1 from '../assets/Slide1.jpg';
 import Slide2 from '../assets/Slide2.jpg';
 import Slide3 from '../assets/Slide3.jpg';
+import BrandsLogo from '../assets/Ad.jpg';
+import MomentsLogo from '../assets/Moments.jpg';
 
 const LandingPage = () => {
     return(
@@ -71,29 +73,49 @@ const LandingPage = () => {
                         Whether it’s creating powerful brand identities or capturing unforgettable moments, we bring vision to life with passion and precision.
                     </motion.p>
                 </div>
-                <div className={styles.subdiv}>
-                    <h1 className={styles.subdivHeading}>WHAT WE DO</h1>
+                <div className={styles.subDiv}>
+                    <h1 className={styles.subDivHeading}>WHAT WE DO</h1>
                     <motion.div
-                        className={styles.subdiv1}
+                        className={styles.subDiv1}
+                        initial={{ y: 100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1, ease: 'easeOut' }}
+                        viewport={{ once: true }}
                     >
-                        <h1>Brands By GCI</h1>
-                        <h3>Crafting compelling brand stories through design, advertising, and creative strategies.</h3>
-                        <ul>
-                            <li>Brand Identity</li>
-                            <li>Ad Films & Commercials</li>
-                            <li>Campaign Design</li>
-                        </ul>
-                        <button>Explore Branding Work</button>
+                        <div className={styles.subDiv1Logo}>
+                            <img src={BrandsLogo}/>
+                        </div>
+                        <div className={styles.subDiv1Content}>
+                            <h1>Brands By GCI</h1>
+                            <h3>Crafting compelling brand stories through design, advertising, and creative strategies.</h3>
+                            <ul>
+                                <li>Brand Identity</li>
+                                <li>Ad Films & Commercials</li>
+                                <li>Campaign Design</li>
+                            </ul>
+                            <button>Explore Branding Work</button>
+                        </div>
                     </motion.div>
-                    <motion.div>
-                        <h1>Moments By GCI</h1>
-                        <h3>Designing and managing unforgettable events that leave a lasting impression.</h3>
-                        <ul>
-                            <li>Corporate Events</li>
-                            <li>Launches & Promotions</li>
-                            <li>Personal Celebrations</li>
-                        </ul>
-                        <button>Explore Events Portfolio</button>
+                    <motion.div 
+                        className={styles.subDiv2}
+                        initial={{ y: 100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
+                        viewport={{ once: true }}
+                    >
+                        <div className={styles.subDiv2Logo}>
+                            <img src={MomentsLogo}/>
+                        </div>
+                        <div className={styles.subDiv2Content}>
+                            <h1>Moments By GCI</h1>
+                            <h3>Designing and managing unforgettable events that leave a lasting impression.</h3>
+                            <ul>
+                                <li>Corporate Events</li>
+                                <li>Launches & Promotions</li>
+                                <li>Personal Celebrations</li>
+                            </ul>
+                            <button>Explore Events Portfolio</button>
+                        </div>
                     </motion.div>
                 </div>
             </div>

@@ -116,28 +116,99 @@
     padding-left: 3rem;
 }
 
-.subdiv{
+.subDiv{
     background-image: url(../assets/bg1.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 2rem;
+    padding: 2rem 4rem 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5rem;
 }
 
-.subdivHeading {
+.subDivHeading {
     color: white;
     font-size: 4Rem;
 }
 
-.subdiv1{
+.subDiv1{
     background-color: white;
     width: 70%;
     border-radius: 10px;
-    box-shadow: 10px 5 px 5px rgba(0, 0, 0, 0.799);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.subDiv1Logo img{
+    width: 250px;
+}
+
+.subDiv1Content, 
+.subDiv2Content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: start;
+    gap: 1px;
+}
+
+.subDiv1Content h1,
+.subDiv2Content h1{
+    font-size: 2.5rem;
+    line-height: 1rem;
+}
+
+.subDiv1Content h3,
+.subDiv2Content h3{
+    font-size: 1.3rem;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+}
+
+.subDiv1Content ul,
+.subDiv2Content ul{
+    list-style: none;
+    text-align: start;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.subDiv1Content button,
+.subDiv2Content button{
+    margin: 10px 0 10px 0;
+    font-size: 1.5rem;
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.subDiv1Content button:hover, 
+.subDiv2Content button:hover{
+    background-color: #ffffff;
+    color: #000;
+    border: 2.5px  solid #000;
+    cursor: pointer;
+}
+
+.subDiv2{
+    background-color: white;
+    width: 70%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    align-self: flex-end;
+}
+
+.subDiv2Logo img{
+    width: 250px;
+    padding-left: 10px;
 }
 
 @media (max-width: 800px) {
