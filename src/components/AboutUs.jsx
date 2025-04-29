@@ -9,6 +9,7 @@ const AboutUs = () => {
                 With expertise in both brand building and event curation, we deliver bold, professional, 
                 and meaningful experiences for businesses and individuals alike.
             </p>
+            <button></button>
         </div>
     );
 };
